@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wnb-z6-EGF">
+                                <rect key="frame" x="260" y="70" width="80" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="7ye-QU-R5q"/>
+                                    <constraint firstAttribute="width" constant="80" id="qSr-B7-f6d"/>
+                                </constraints>
+                                <state key="normal" title="成功"/>
+                                <connections>
+                                    <action selector="success:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Ha-x3-Qkv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fPv-zg-eav">
+                                <rect key="frame" x="260" y="150" width="80" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="BNG-VS-sLL"/>
+                                    <constraint firstAttribute="height" constant="30" id="t3g-Dc-5XG"/>
+                                </constraints>
+                                <state key="normal" title="失败"/>
+                                <connections>
+                                    <action selector="error:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7L5-N9-EQq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2nE-bY-Mvs">
+                                <rect key="frame" x="260" y="230" width="80" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="nba-4u-CAv"/>
+                                    <constraint firstAttribute="height" constant="30" id="tmF-zh-Iez"/>
+                                </constraints>
+                                <state key="normal" title="加载中"/>
+                                <connections>
+                                    <action selector="loading:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TSk-cW-T1M"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1q-ln-dqG">
+                                <rect key="frame" x="260" y="310" width="80" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="GQa-BM-g25"/>
+                                    <constraint firstAttribute="width" constant="80" id="TwE-9p-gGL"/>
+                                </constraints>
+                                <state key="normal" title="隐藏"/>
+                                <connections>
+                                    <action selector="hide:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7ju-XW-6hk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="az8-If-HiU">
+                                <rect key="frame" x="260" y="390" width="80" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="0JG-th-EuA"/>
+                                    <constraint firstAttribute="width" constant="80" id="P0S-5f-qeB"/>
+                                </constraints>
+                                <state key="normal" title="普通文字"/>
+                                <connections>
+                                    <action selector="message:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fZF-fL-nkR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="az8-If-HiU" firstAttribute="top" secondItem="h1q-ln-dqG" secondAttribute="bottom" constant="50" id="1Ai-T8-mcc"/>
+                            <constraint firstItem="Wnb-z6-EGF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="ESm-7s-NeW"/>
+                            <constraint firstItem="2nE-bY-Mvs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="K7i-SR-utz"/>
+                            <constraint firstItem="h1q-ln-dqG" firstAttribute="top" secondItem="2nE-bY-Mvs" secondAttribute="bottom" constant="50" id="POZ-pQ-Mq0"/>
+                            <constraint firstItem="az8-If-HiU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bfR-XZ-qKW"/>
+                            <constraint firstItem="2nE-bY-Mvs" firstAttribute="top" secondItem="fPv-zg-eav" secondAttribute="bottom" constant="50" id="edO-Jh-ZZk"/>
+                            <constraint firstItem="fPv-zg-eav" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kcg-GD-CKh"/>
+                            <constraint firstItem="Wnb-z6-EGF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rvw-Lt-v7w"/>
+                            <constraint firstItem="fPv-zg-eav" firstAttribute="top" secondItem="Wnb-z6-EGF" secondAttribute="bottom" constant="50" id="uGT-hr-5sJ"/>
+                            <constraint firstItem="h1q-ln-dqG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xt6-cA-QDR"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="317" y="210"/>
+        </scene>
+    </scenes>
+</document>
